@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+ xmlns:f="http://xmlns.jcp.org/jsf/core" 
+ xmlns:b="http://bootsfaces.net/ui">
+ 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Preview article</title>
+</head>
+<h:body>
+	<br />
+	<h1><h:outputText value ="#{articleBean.name}"/></h1>
+	<br />
+	<b:outputText value="#{articleBean.contenu}" />
+	<br />
+		<p>
+			<h:form>
+
+				<b:commandButton value="retour a la page de soumission" action="index"/>
+			</h:form>
+		</p>	
+</h:body>
+</html>
